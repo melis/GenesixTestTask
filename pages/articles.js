@@ -17,7 +17,8 @@ const Articles = ({ articles }) => {
 };
 export default Articles;
 
-Articles.getInitialProps = async () => {
+Articles.getInitialProps = async (a) => {
+  console.log(a);
   const res = await axios.get("http://localhost:3000/api/articles");
   return { articles: res.data.articles };
 };
