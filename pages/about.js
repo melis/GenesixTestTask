@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout";
 const About = () => {
   return (
     <Layout>
-      <h2>Это тестовая задания </h2>
+      <h2>Тестовая задания для Genesix</h2>
       <p>
         Тестовое задание next js: "Реализовать REST - эндпоинт, который
         отображал бы данные страниц в таком виде GET /api/articles/:id (где : id

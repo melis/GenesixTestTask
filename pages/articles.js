@@ -3,8 +3,7 @@ import Layout from "../components/Layout/Layout";
 import Article from "../components/Article/Article";
 import style from "./articlesBox.module.scss";
 
-const Articles = (props) => {
-  const { articles } = props;
+const Articles = ({ articles }) => {
   return (
     <Layout>
       <h1>Articless {articles.length}</h1>

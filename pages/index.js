@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Create Next App</title>
+        <meta charSet="utf-8" />
       </Head>
       <Layout>
         <h1>Lorem ipsum</h1>
