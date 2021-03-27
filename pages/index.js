@@ -10,7 +10,7 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <Layout>
-        <h2>Тестовая задания для Genesix</h2>
+        <h2>Тестовая задания от Genesix</h2>
         <p>
           Тестовое задание next js: "Реализовать REST - эндпоинт, который
           отображал бы данные страниц в таком виде <br />
@@ -41,7 +41,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            Один артиклы JSON
+            Один артикл JSON
             <Link href={"/api/article/1"}>
               <a style={{ color: "blue" }}>
                 {" "}
