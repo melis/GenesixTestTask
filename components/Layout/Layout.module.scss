@@ -1,0 +1,39 @@
+.main {
+  max-width: 1020px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.nav {
+  background-color: rgb(72, 72, 216);
+  color: white;
+  border: 1px solid transparent;
+  padding: 20px 0;
+  div {
+    max-width: 1020px;
+    margin: auto;
+    .logo {
+      color: gold;
+      padding-right: 20px;
+      display: inline-block;
+    }
+    ul {
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      margin: auto;
+      li {
+        display: inline-block;
+        a {
+          padding-right: 10px;
+          &:hover {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1020px) {
+    padding: 20px;
+  }
+}

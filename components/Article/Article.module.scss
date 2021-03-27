@@ -1,0 +1,35 @@
+.articleBox {
+  width: 250px;
+  padding: 15px;
+
+  .articleInBox {
+    background-color: #f9fafc;
+    transition: 0.2s;
+    &:hover {
+      box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1020px) {
+    width: 30%;
+  }
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+  @media (max-width: 400px) {
+    .articleInBox {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+      &:hover {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        transform: none;
+      }
+    }
+    width: 100%;
+  }
+}
