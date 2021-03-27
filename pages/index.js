@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Link from "next/link";
 import Layout from "../components/Layout/Layout";
 
 export default function Home() {
@@ -10,16 +10,50 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <Layout>
-        <h1>Lorem ipsum</h1>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        <h2>Тестовая задания для Genesix</h2>
+        <p>
+          Тестовое задание next js: "Реализовать REST - эндпоинт, который
+          отображал бы данные страниц в таком виде <br />
+          GET /api/articles/:id (где : id - это идентификатор статьи ) сами
+          данные возвращаются в таком виде:
+          <br />
+          “title”:”’Title article’, “description”:”Lorem ipsum”,
+          “image”:”http://….” <br />
+          //Не важно откуда картинка <br /> Базу данных поднимать не нужно можно
+          захардкодить 2 - 3 статьи <br /> Использовать выше написанный бекенд
+          сделать на Next.js возможность открывать
+          <br />
+          /articles - список статей <br /> /article/:id - статью по id <br />{" "}
+          Сайт должен использовать серверный рендер добавлять соответствующие
+          мета теги. <br /> Визуальный дизайн на Ваш взгляд без использования
+          Bootstrap …. <br />
+          Можно сделать простую адаптивность Желательно использовать typescript
+        </p>
+        <div>
+          <h3>Api</h3>
+          <div>
+            Артиклы JSON
+            <Link href={"/api/articles"}>
+              <a style={{ color: "blue" }}>
+                {" "}
+                http://localhost:3000/api/articles
+              </a>
+            </Link>
+          </div>
+          <div>
+            Один артиклы JSON
+            <Link href={"/api/article/1"}>
+              <a style={{ color: "blue" }}>
+                {" "}
+                http://localhost:3000/api/article/1"
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <h3>Доработка</h3>
+          Надо добавлять лоадеры, и миграция на typescript
+        </div>
       </Layout>
     </>
   );
