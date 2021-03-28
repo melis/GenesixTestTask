@@ -4,7 +4,7 @@ import Layout from "../components/Layout/Layout";
 const About = () => {
   return (
     <Layout>
-      <h4>About text</h4>
+      <h2>About text</h2>
       <p>Выполнил: Жолдошев М.</p>
     </Layout>
   );

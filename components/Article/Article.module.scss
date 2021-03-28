@@ -23,6 +23,7 @@
     width: 50%;
   }
   @media (max-width: 400px) {
+    padding: 0;
     .articleInBox {
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
       &:hover {

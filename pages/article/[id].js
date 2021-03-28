@@ -7,7 +7,7 @@ const Article = ({ article }) => {
   }
   return (
     <Layout>
-      <h1>{article.title}</h1>
+      <h2>{article.title}</h2>
       <img src={article.image} />
       <p>{article.description}</p>
     </Layout>

@@ -6,7 +6,7 @@ import style from "./articlesBox.module.scss";
 const Articles = ({ articles }) => {
   return (
     <Layout>
-      <h1>Articless {articles.length}</h1>
+      <h2>Articless {articles.length}</h2>
       <div className={style.articlesBox}>
         {articles.map((el) => (
           <Article el={el} key={el.id} />
