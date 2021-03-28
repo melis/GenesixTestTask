@@ -6,7 +6,11 @@ const About: NextPage = () => {
   return (
     <Layout>
       <h2>About text</h2>
-      <p>Выполнил: Жолдошев М.</p>
+      <img
+        src="https://hhcdn.ru/photo/610649356.jpeg?t=1617039829&h=xtmFY3GCTo_rakTZIdktMw"
+        style={{ width: "150px" }}
+      />
+      <p>Задачу выполнил для Genesix: Жолдошев М.</p>
     </Layout>
   );
 };
