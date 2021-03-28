@@ -1,4 +1,6 @@
-let articles = [
+import { ArticleType } from "../../components/Article/Article";
+
+let articles: ArticleType[] = [
   {
     id: 0,
     title: "Title 0",

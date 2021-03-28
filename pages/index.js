@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <Layout>
         <h2>Тестовая задания от Genesix</h2>
-        <p>
+        <p style={{ lineHeight: "2em" }}>
           Тестовое задание next js: <br />
           "Реализовать REST - эндпоинт, который отображал бы данные страниц в
           таком виде <br />
@@ -21,7 +21,7 @@ export default function Home() {
           <br />
           “title”:”’Title article’, “description”:”Lorem
           ipsum”,“image”:”http://….” <br />
-          //Не важно откуда картинка <br /> Базу данных поднимать не нужно можно
+          Не важно откуда картинка <br /> Базу данных поднимать не нужно можно
           захардкодить 2 - 3 статьи <br /> Использовать выше написанный бекенд
           сделать на Next.js возможность открывать
           <br />
@@ -51,10 +51,6 @@ export default function Home() {
               </a>
             </Link>
           </div>
-        </div>
-        <div>
-          <h3>Доработка</h3>
-          Надо добавлять лоадеры, и миграция на typescript
         </div>
       </Layout>
     </>

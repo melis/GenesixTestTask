@@ -1,9 +1,13 @@
 import axios from "axios";
 import Layout from "../components/Layout/Layout";
-import Article from "../components/Article/Article";
+import Article, { ArticleType } from "../components/Article/Article";
 import style from "./articlesBox.module.scss";
+import { NextPage } from "next";
 
-const Articles = ({ articles }) => {
+type PropsType = {
+  articles: ArticleType[];
+};
+const Articles: NextPage<PropsType> = ({ articles }) => {
   return (
     <Layout>
       <h2>Articless {articles.length}</h2>

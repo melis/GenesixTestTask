@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./Layout.module.scss";
+
 const Layout = ({ children }) => {
   const [active, setActive] = useState(false);
   return (

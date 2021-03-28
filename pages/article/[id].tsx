@@ -1,7 +1,11 @@
 import Layout from "../../components/Layout/Layout";
 import axios from "axios";
-
-const Article = ({ article }) => {
+import { NextPage } from "next";
+import { ArticleType } from "../../components/Article/Article";
+type PropsType = {
+  article: ArticleType;
+};
+const Article: NextPage<PropsType> = ({ article }) => {
   if (typeof article != "object") {
     return <Layout>{article}</Layout>;
   }
