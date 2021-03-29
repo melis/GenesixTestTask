@@ -19,9 +19,15 @@ const Article: NextPage<PropsType> = ({ article }) => {
 };
 export default Article;
 
-Article.getInitialProps = async ({ query }) => {
-  const { data } = await axios.get(
-    `http://localhost:3000/api/article/${query.id}`
-  );
+Article.getInitialProps = async (a) => {
+  const { query } = a;
+  let host = "localhost:3000";
+
+  if (a.req) {
+    host = a.req.headers.host;
+  } else {
+    host = window.location.host;
+  }
+  const { data } = await axios.get(`http://${host}/api/article/${query.id}`);
   return { article: data.article };
 };
