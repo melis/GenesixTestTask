@@ -21,7 +21,15 @@ const Articles: NextPage<PropsType> = ({ articles }) => {
 };
 export default Articles;
 
-Articles.getInitialProps = async () => {
-  const res = await axios.get("http://localhost:3000/api/articles");
+Articles.getInitialProps = async (a) => {
+  let host = "localhost:3000";
+
+  if (a.req) {
+    host = a.req.headers.host;
+  } else {
+    host = window.location.host;
+  }
+
+  const res = await axios.get(`http://${host}/api/articles`);
   return { articles: res.data.articles };
 };
