@@ -22,6 +22,7 @@ const Articles: NextPage<PropsType> = ({ articles }) => {
 export default Articles;
 
 Articles.getInitialProps = async (a) => {
+  console.log('c')
   let host = "localhost:3000";
 
   if (a.req) {
